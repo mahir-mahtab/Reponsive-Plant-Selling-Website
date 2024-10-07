@@ -2,12 +2,14 @@ const navmenu=document.querySelector('#navmenu');
 const navlinks=navmenu.querySelectorAll('.nav-link');
 const icon=document.querySelector('#icon-menu');
 icon.addEventListener('click',()=>{
+    navmenu.classList.toggle("left-[100%]");
     navmenu.classList.toggle("left-[0%]");
     icon.classList.toggle("ri-close-large-line");
 }
 );
 navlinks.forEach(link=>{
     link.addEventListener('click',()=>{
+        navmenu.classList.toggle("left-[100%]");
         navmenu.classList.toggle("left-[0%]");
         icon.classList.toggle("ri-close-large-line");
     }
